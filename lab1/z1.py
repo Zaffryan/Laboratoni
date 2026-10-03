@@ -1,7 +1,7 @@
 a = str(input())
 d = {}
 for i in a:
-    d.update({i: a.count(i)})
+    d[i] = a.count(i)
 
 b=[]
 for i in a:
@@ -9,4 +9,3 @@ for i in a:
 
 for i in set(b):
     print(i, " : ", d[i])
-
