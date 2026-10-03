@@ -8,4 +8,4 @@ for i in a:
     b.append(i)
 
 for i in set(b):
-    print(i, " : ", d[i])
+    print(i, " : ", d.get(i))
