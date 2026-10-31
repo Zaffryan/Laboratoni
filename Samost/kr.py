@@ -33,9 +33,12 @@ for i in range(10):
 def gen_Fibonachi():
     a = 0
     b = 1
+    c = a+b
     while True:
         yield a
-        a, b = b, a+b
+        a = b
+        b = c
+        c = a+b
 print("генератор фибоначчи")
 a = gen_Fibonachi()
 for i in range(10):
