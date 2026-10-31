@@ -51,7 +51,7 @@ def gen_set_Fibonachi(a, b):
         a = b
         b = c
         c = a+b
-print("генератор фибоначчи")
+print("генератор фибоначчи, с определенных чисел")
 a = gen_set_Fibonachi(3, 5 )
 for i in range(10):
     print(next(a)) 
