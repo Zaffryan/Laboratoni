@@ -44,3 +44,15 @@ a = gen_Fibonachi()
 for i in range(10):
     print(next(a)) 
 
+def gen_set_Fibonachi(a, b):
+    c = a+b
+    while True:
+        yield a
+        a = b
+        b = c
+        c = a+b
+print("генератор фибоначчи")
+a = gen_set_Fibonachi(3, 5 )
+for i in range(10):
+    print(next(a)) 
+
